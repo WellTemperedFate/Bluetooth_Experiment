@@ -1,0 +1,17 @@
+﻿<Window x:Class="Bluetooth_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bluetooth_Test"
+        mc:Ignorable="d"
+        Title="Bluetooth Experiment" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <ListBox Name="lbItems" SelectionChanged="lbItems_SelectionChanged" Grid.Row="0" Margin="5"/>
+        <Button Name="btnConnect" Content="connect" Grid.Row="1" Margin="5"></Button>
+    </Grid>
+</Window>
